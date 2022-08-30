@@ -404,6 +404,24 @@ nav .icons i:hover {
 }
 /* End Music */
 
+/* Start Photos */
+.photos{
+  margin-top:70px;
+}
+
+.photos .box {
+  flex: 33.3333%;
+  max-width: 33.3333%;
+}
+.photos .box img {
+  width: 100%;
+  margin: -2px;
+}
+.photos .main-btn {
+  margin-top: 70px !important;
+}
+/* End Photos */
+
 /* Start Framework */
 .heading {
   text-align: center;
