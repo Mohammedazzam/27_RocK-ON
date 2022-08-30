@@ -1,9 +1,9 @@
 /*Start global*/
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
@@ -27,18 +27,18 @@ nav {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-.t-b{
+.t-b {
   background-color: #051024 !important;
 }
-.navbar{
-  transition: all .5s ease-in-out;
+.navbar {
+  transition: all 0.5s ease-in-out;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
 }
-nav .logo img{
+nav .logo img {
   width: 80px;
 }
-nav a{
+nav a {
   color: #fff;
   position: relative;
   text-decoration: none;
@@ -47,74 +47,78 @@ nav a{
   padding: 10px;
 }
 nav ul li {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-nav ul li:not(:last-of-type){
+nav ul li:not(:last-of-type) {
   margin-right: 20px;
 }
 nav ul li a.active,
-nav ul li a:hover{
-  color: #FF275E !important;
+nav ul li a:hover {
+  color: #ff275e !important;
 }
-nav ul li a:before{
-  content: '';
+nav ul li a:before {
+  content: "";
   width: 0px;
   height: 3px;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(229,42,112,1);
-  transition: all .5s ease;
+  background-color: rgba(229, 42, 112, 1);
+  transition: all 0.5s ease;
 }
-nav ul li a:after{
-  content: '';
+nav ul li a:after {
+  content: "";
   width: 0px;
   height: 3px;
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: rgba(88,65,229,1);
-  transition: all .5s ease;
+  background-color: rgba(88, 65, 229, 1);
+  transition: all 0.5s ease;
 }
-nav ul li:hover a:after{
+nav ul li:hover a:after {
   width: 50%;
   transform: translateX(-100%);
 }
-nav ul li:hover a:before{
+nav ul li:hover a:before {
   width: 50%;
   transform: translateX(100%);
-} 
-.navbar-nav{
+}
+.navbar-nav {
   margin: 0 auto;
 }
-.navbar-toggler{
-  background-color: #FF275E !important;
+.navbar-toggler {
+  background-color: #ff275e !important;
   outline: none !important;
 }
-.navbar-toggler-icon i{
+.navbar-toggler-icon i {
   margin-top: 3px;
   font-size: 24px;
 }
-nav .icons i{
+nav .icons i {
   margin-right: 15px;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
-nav .icons i:hover{
-  background: linear-gradient(90deg, rgba(229,42,112,1) 0%, rgba(158,55,174,1) 50%, rgba(88,65,229,1) 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+nav .icons i:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(229, 42, 112, 1) 0%,
+    rgba(158, 55, 174, 1) 50%,
+    rgba(88, 65, 229, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-@media(max-width:992px){
-  .nav-link{
-      display: inline-block;
+@media (max-width: 992px) {
+  .nav-link {
+    display: inline-block;
   }
-  .navbar-collapse{
-      margin-left: 10px;
+  .navbar-collapse {
+    margin-left: 10px;
   }
 }
 /*End Navbar*/
-
 
 /* Start Header */
 .header {
@@ -149,11 +153,13 @@ nav .icons i:hover{
   font-size: 90px;
   margin: 0;
   color: #ff275e;
+  text-transform: uppercase;
 }
 .header p:first-of-type {
   font-size: 30px;
   margin: 0;
   font-weight: 800;
+  text-transform: uppercase;
 }
 .header p:last-of-type {
   font-size: 14px;
@@ -172,16 +178,166 @@ nav .icons i:hover{
   outline: none;
   cursor: pointer;
   font-size: 16px;
-  background: linear-gradient(90deg, rgba(199,44,106,1) 0%, rgba(78,61,203,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(199, 44, 106, 1) 0%,
+    rgba(78, 61, 203, 1) 100%
+  );
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+  text-transform: capitalize;
 }
 .header button:hover {
   background: none;
-  border-color:#ff275e;
+  border-color: #ff275e;
   color: #ff275e;
 }
 /* End Header */
+
+/* End Tours */
+.tours {
+  margin-top: 70px;
+}
+.tours .image,
+.tours .info {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+.tours .image img {
+  width: 100%;
+  height: 570px;
+}
+.tours .info .circle {
+  flex: 20%;
+  max-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tours .info .row {
+  margin-bottom: 40px;
+}
+.tours .info .circle .con {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background-color: #051024;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.tours .info .circle .con::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(
+    90deg,
+    rgba(199, 44, 106, 1) 0%,
+    rgba(78, 61, 203, 1) 100%
+  );
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.tours .circle span {
+  font-size: 17px;
+  font-weight: 900;
+}
+.tours .info .details {
+  flex: 80%;
+  max-width: 80%;
+}
+.tours .info .details p{
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.tours .info .details span{
+  font-size: 12px;
+  margin-right: 50px;
+  color: #777;
+}
+
+
+.tours .info .details i{
+  margin-right: 10px;
+}
+.tours .fa-clock{
+  color: #231d55;
+}
+.tours .fa-map-marker-alt{
+  color: #ff275e;
+}
+/* Start Tours */
+
+/* Start Framework */
+.heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.heading h2 {
+  font-size: 27px;
+  color: #ff275e;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.heading p {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.main-btn {
+  border: 1px solid #ff275e;
+  padding: 7px 22px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  color: #ff275e;
+  outline: none;
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 1px;
+  background: none;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  text-transform: uppercase;
+  display: block;
+  margin-top:20px ;
+}
+.main-btn:hover{
+  background: linear-gradient(
+  90deg,
+  rgba(199, 44, 106, 1) 0%,
+  rgba(78, 61, 203, 1) 100%
+);
+color: #fff;
+border:  1px solid transparent;
+}
+.m-auto {
+  margin: 0 auto;
+}
+/* End Framework */
