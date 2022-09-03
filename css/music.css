@@ -10,6 +10,7 @@ body {
   color: #fff;
   background-color: #051024;
   height: 10000px;
+  overflow: hidden;
 }
 
 /*End global*/

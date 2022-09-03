@@ -16,8 +16,7 @@ $(document).ready(function () {
                 'boxShadow': '8px 0 5px #000'
 
             })
-        }
-        else {
+        } else {
             $('nav').css({
                 'backgroundColor': 'transparent',
                 'padding': '25px 0',
@@ -31,28 +30,27 @@ $(document).ready(function () {
             'backgroundColor': '#051024',
             'padding': '10px 0',
             'boxShadow': '8px 0 5px #000'
-    
+
         })
-    }
-    else {
+    } else {
         $('nav').css({
             'backgroundColor': 'transparent',
             'padding': '25px 0',
             'boxShadow': 'none'
-    
+
         })
     }
 
     // smppth scroll
-    $('nav li a').on('click', function() {
+    $('nav li a').on('click', function () {
         $('html, body').animate({
-            scrollTop :$('#' + $(this).data('scroll')).offset().top - 80
-        },1000)
+            scrollTop: $('#' + $(this).data('scroll')).offset().top - 80
+        }, 1000)
     })
 
     // add active to links
 
-    $('nav li a').on('click', function() {
+    $('nav li a').on('click', function () {
         $(this).addClass('active').parent().siblings().find('a').removeClass('active')
     })
 
@@ -68,6 +66,15 @@ $(document).ready(function () {
             }
         })
     })
+
+    // Nice Scroll
+    $(function () {
+        $("body").niceScroll({
+            cursorcolor:'#ff275e',
+            cursorwidth:'8px',
+            cursorborder:'none',
+            zindex:'99999'
+
+        });
+    });
 });
-
-
