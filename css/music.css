@@ -149,14 +149,7 @@ nav .icons i:hover {
 /* End Header */
 
 /* Start Header */
-.header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
+
 
 .header .info {
   color: #fff;
@@ -470,6 +463,61 @@ nav .icons i:hover {
 /* End Blogs */
 
 
+/* Start back */
+.back {
+  margin-top: 70px;
+  height: 350px;
+  background-image: url(../images/11.jpg);
+  background-size: cover;
+  background-position:center ;
+  background-attachment:fixed;
+  position: relative;
+}
+.back .info {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  text-align: center;
+}
+.back .info h2 {
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+.back .info p {
+  font-size: 14px;
+  line-height: 27px;
+}
+.back .info form {
+  margin-top: 60px;
+  position: relative;
+}
+.back .info input {
+  background: none;
+  border: 1px solid #ff275e;
+  padding: 10px 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 100%;
+}
+.back .info button {
+  font-size: 13px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 13px 20px;
+  text-transform: capitalize;
+}
+/* End back */
+
 
 /* Start Framework */
 .heading {
@@ -536,5 +584,12 @@ nav .icons i:hover {
 .overflow-h {
   overflow: hidden;
 }
-
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 /* End Framework */
